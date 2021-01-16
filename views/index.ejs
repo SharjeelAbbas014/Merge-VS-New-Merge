@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>AOA DESIGN</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body>
+    <div class="text-primary" style="height: 100vh;width: 100vw;">
+        <div style="height: 30%;background: var(--blue);">
+            <div class="text-center d-lg-flex justify-content-center align-content-around justify-content-lg-center align-items-lg-center"
+                style="text-align: left;height: 100%;width: 100%;box-shadow: 5px 11px 19px 11px var(--cyan);z-index:400;">
+                <input type="number" placeholder="Enter Lower Limit" id="minValue"
+                    style="border-radius: 57px;padding: 10px;border-style: none;padding-left: 23px;"><input
+                    type="number" id="maxValue"
+                    style="margin: 88px;border-radius: 57px;padding: 10px;border-style: none;padding-left: 23px;"
+                    placeholder="Enter Upper Limit"><input type="number" id="totalSize"
+                    placeholder="Enter Length of array"
+                    style="border-radius: 57px;padding: 10px;border-style: none;padding-left: 23px;"></div>
+        </div>
+        <div id="downBoxes">
+            <div style="width: 100%;height: 100%;color: var(--cyan);background: white;border: 2px solid var(--blue) ;">
+                <p class="text-center"
+                    style="color: var(--cyan);font-size: 26px;background: white;border-width: 9px;border-color: var(--blue);">
+                    Merge Sort</p>
+                <p id="merSec" class="score"><img src="assets/img/loader.gif" id="imageMerge" alt=""></p>
+                <div class="chartDiv">
+                    <canvas id="myChart" width="200" height="200"></canvas>
+                </div>
+            </div>
+            <div style="background: white;width: 100%;height: 100%;color: var(--cyan);border: 2px solid var(--blue) ;">
+                <p class="text-center" style="color: var(--cyan);font-size: 26px;">Modified Merge Selection Sort</p>
+                <p id="newMerSec" class="score"><img src="assets/img/loader.gif" id="imageMergeMod" alt=""></p>
+                <div class="chartDiv">
+                    <canvas id="myChart2" width="200" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+    </div><button class="btn btn-primary" id="subbutton" onclick="doLogic()" type="button">Button</button>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/js/Chart.min.js"></script>
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
